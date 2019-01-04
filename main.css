@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 300vh; 
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+button{
+    cursor: pointer;
+    z-index: 3;
+}
+#cursor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.2s;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: #00baba;
+}
+#head{
+    width: 100%;
+    height: 60vh;
+    display: block;
+}
+#header{
+    width: 100vw;
+    height: 4vw;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+}
+#header-inner{
+    display: flex;
+    width: 65vw;
+    height: vh;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+}
+#join{
+    height: 100%;
+    position: relative;
+    width: 6vw;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    background-color: #00baba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+}
+#join i{
+    position: absolute;
+    left: -100px;
+    font-size: 30px;
+    transform: rotate(-30deg);
+    color: black;
+}
+#landing{
+    width: 100vw;
+    height: 60vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ddf6ff;
+}
+#landing-inner{
+    width: 80%;
+    height: 80%;
+    background-image: url(images/header-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#mid{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#mid1{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    z-index: 2;
+}
+h1{
+    font-family: 'Merriweather', serif;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+#mid h1{
+    font-size:  44px;
+}
+#mid p {
+    font-size: 20px;
+    font-weight: 400;
+}
+#share i{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #00baba;
+    background-color: rgba(0, 186, 186, 0.1);
+    padding: 15px;
+}
+bold{
+    font-size: 140%;
+    font-weight: 700;
+}
+#mid2{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: 0.5s;
+}
+#mid2-inner1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+#mid2-inner1 p{
+    width: 51%;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+#mid2-inner1 h1{
+    width: 51%;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+#mid2-inner2{  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 120px;
+}
+#mid2-inner-bk{
+    width: 50%;
+    height: 70%;
+    background-image: url(images/image-charity.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.block{
+    display: block;
+    height: 80vh;
+}
+#ideas{
+    width: 100%;
+    height: 90vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ideas1{
+    flex: 1;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/contacts.png);
+    background-size: cover;
+    background-position: center;
+}
+#ideas1 h1{
+    margin-bottom: 2%;
+    font-size: 30px;
+    font-weight: 600;
+}
+#coma{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 400;
+}
+#ideas1 h3{
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 400;
+}
+#ideas1 input{
+    min-height: 10%;
+    max-height: 30%;
+    max-width: 30%;
+    min-width: 4%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    font-size: 150%;
+}
+#com2{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+#ideas1 button{
+    height: 10%;
+    width: 10%;
+    background-color: #00baba;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+#ideas2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: 0.5s;
+}
+#sporazum{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    padding-right: 80px;
+}
+#afterchr{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    color: black;
+    padding-left: 80px;
+}
+#afterchr h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+#afterchr p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.block2{
+    display: flex;
+    flex: 1;
+}
+#bottom{
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(232, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+#reg input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: rgb(0, 186, 186);
+    outline: none;
+    height: 39px;
+    max-width: 185.531px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #00baba;
+    margin-left: 10px;
+    background: transparent;
+}
+input::placeholder{
+    color: #00baba
+}
+#bottom button{
+    height: 10%;
+    width: 10%;
+    background-color: #00baba;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+.block3{
+    height: 40vh;
+    width: 100%;
+}
+#copy{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#copy p:first-child{
+    margin-right: 35%;
+}
